@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+}
+/*anim1*/
+
+.animation1{
+    background-color: black;
+    height: 900px;
+    display:grid;
+    overflow: hidden;
+    nav-index: 1;
+}
+.animation1 button{
+    margin: auto;
+}
+.animated1{
+    animation-name: anim1;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+.animatebutton{
+    animation-name: btnanim;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+@keyframes btnanim{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);font-size: 20px;color:red ;}
+}
+@keyframes anim1{
+    0%{background-color: black;}
+    50%{background-color: aqua;}
+    100%{background-color: blueviolet;}
+}
+
+
+
+
+
+/*anim2*/
+
+.animation2{
+    background-image: url(./src/background2.jpg);
+    background-size: cover;
+    height: 900px;
+    max-width: 100%;
+    z-index: 0;
+}
+.animation2 img{
+    width: 1100px;
+    height: 900px;
+    position: absolute;
+    float: right;
+    z-index: 1;
+}
+
+
+
+/*anim3*/
+
+
+.animation3{
+    background-color: cadetblue;
+    height: 900px;
+    display: grid;
+}
+.animation3 h1{
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+    font-size: 40px;
+    font-family: montserrat;
+    display: none;
+    color: rgb(0, 0, 0);
+    
+}
+.animation3 img{
+    width: 500px;
+    margin: auto;
+    display: none;
+}
+.animated3{
+    animation-name: anim3;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes anim3{
+    from{transform: translateX(-600px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+
+.animation4{
+    background-color: rgb(41, 41, 41);
+    height: 955px;
+}
+.animation4 section{
+    margin-left: 5px;
+}
+.animation4 img{
+    opacity: 0.7;
+    width: 75px;
+    transition: 1s;
+}
+.animation4 img:hover{
+    transition: 0.1s;
+    background-color: rgb(0, 255, 42);
+    box-shadow: 0px 0px 30px rgb(2, 223, 252);
+    cursor: pointer;
+    border-radius: 1px;
+    opacity: 1;
+}
